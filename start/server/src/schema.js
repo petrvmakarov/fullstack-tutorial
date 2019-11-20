@@ -21,8 +21,7 @@ const typeDefs = gql`
   }
   
   type Mission {
-    #name: String
-    # ... with rest of schema
+    name: String
     missionPatch(mission: String, size: PatchSize): String
   }
   
